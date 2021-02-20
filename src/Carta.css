@@ -3,11 +3,15 @@
     height: 125px;       
 }
 
+.icono{
+    height: 70%; 
+}
+
 .front{
     width: 125px;
     height: 125px;   
     background-color: rgb(202, 32, 137);
-    border-radius: 15px;
+    border-radius: 50%;
 }
 
 .back{
@@ -16,8 +20,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(238, 255, 0);
-    border-radius: 15px;
+    background-color: rgb(235, 235, 235);  /*background-color: rgb(238, 255, 0);*/
+    border-radius: 50%;
+    border: 1px solid black;
 }
 
 .ReactFlipCard{
