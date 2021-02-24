@@ -4,7 +4,8 @@
 }
 
 .icono{
-    height: 70%; 
+    height: 80%; 
+    width: 80%;
 }
 
 .front{
@@ -12,6 +13,9 @@
     height: 125px;   
     background-color: rgb(202, 32, 137);
     border-radius: 50%;
+    background-image: url("/src/utils/Pokéball02.png");
+    background-position: center center;
+    background-size: cover;
 }
 
 .back{
@@ -20,9 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(235, 235, 235);  /*background-color: rgb(238, 255, 0);*/
+    background-color: rgba(235, 235, 235, 0.966);  
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgb(12, 21, 59);
 }
 
 .ReactFlipCard{

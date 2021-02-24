@@ -1,6 +1,6 @@
 header{
     height: 50px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -8,13 +8,15 @@ header{
 }
 
 .titulo{
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px;
-    color: rgb(9, 2, 39);
+    /* color: rgb(229, 255, 0); */
+    color: rgb(255, 243, 1);
+    font-weight: bold;
 }
 
 .boton-reiniciar{
-    background-color: rgb(202, 32, 137);
+    background-color: rgb(234, 0, 18);
     border-radius: 8px;
     width: 130px;
     height: 30px;
@@ -23,5 +25,6 @@ header{
     left: 20px;
     top: 58px; 
     color:white;   
-    border:0px;
+    /* border:0px; */
+    border: 2px solid black;
 }
