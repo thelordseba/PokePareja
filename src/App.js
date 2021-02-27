@@ -4,6 +4,10 @@ import Header from './Header';
 import Tablero from './Tablero';
 import construirBaraja from './utils/construirBaraja';
 import swal from 'sweetalert';
+import UIfx from "uifx";
+import introPokemon from "./utils/pokemon-intro.mp3";
+import Footer from './Footer';
+
 
 const getEstadoInicial = ()=>{
   const baraja = construirBaraja();
@@ -22,7 +26,7 @@ class App extends Component{
   }
   render(){
     return (
-      <div className="App">
+      <div className="App">        
         <Header 
            intentos={this.state.numeroDeIntentos}
            reiniciarJuego={()=> this.resetearJuego()}
@@ -31,7 +35,8 @@ class App extends Component{
            baraja = {this.state.baraja} 
            parejaSeleccionada = {this.state.parejaSeleccionada}
            seleccionarCarta = {(carta)=> this.seleccionarCarta(carta)}                                 //Paso al tablero por props el método seleccionarCarta 
-        />
+           />  
+        <Footer/>         
       </div>
     );
   }
@@ -81,14 +86,17 @@ class App extends Component{
   verificarGanador(baraja){
     const cartasNoAdivinadas = baraja.filter((carta)=> !carta.fueAdivinada)
     if(cartasNoAdivinadas.length === 0){
+
+      const introSound = new UIfx(introPokemon);
+      introSound.play();
       
       swal({
         title: "FELICITACIONES!!!!!",
         text: `Ganaste la partida en ${this.state.numeroDeIntentos} intentos.`,
         icon: "success",
-        button: "Aceptar",
+        button: "Aceptar",       
       })
-      .then(()=>{
+      .then(()=>{        
         this.resetearJuego();
       });
       
@@ -96,12 +104,10 @@ class App extends Component{
   }
 
   resetearJuego(){
-    this.setState(getEstadoInicial());
+    this.setState(getEstadoInicial()); 
   };
-
+  
 }
 
 export default App;
-
-
 
