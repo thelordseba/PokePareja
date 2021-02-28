@@ -36,7 +36,7 @@ class App extends Component{
            parejaSeleccionada = {this.state.parejaSeleccionada}
            seleccionarCarta = {(carta)=> this.seleccionarCarta(carta)}                                 //Paso al tablero por props el método seleccionarCarta 
            />  
-        <Footer/>         
+        {/* <Footer/>          */}
       </div>
     );
   }
