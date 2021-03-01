@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/JuegoDeMemoria/static/css/main.bb6bbdc5.chunk.css",
-    "main.js": "/JuegoDeMemoria/static/js/main.82b34bfe.chunk.js",
-    "main.js.map": "/JuegoDeMemoria/static/js/main.82b34bfe.chunk.js.map",
-    "runtime-main.js": "/JuegoDeMemoria/static/js/runtime-main.2a473e84.js",
-    "runtime-main.js.map": "/JuegoDeMemoria/static/js/runtime-main.2a473e84.js.map",
-    "static/css/2.adb0b085.chunk.css": "/JuegoDeMemoria/static/css/2.adb0b085.chunk.css",
-    "static/js/2.74b5dbe7.chunk.js": "/JuegoDeMemoria/static/js/2.74b5dbe7.chunk.js",
-    "static/js/2.74b5dbe7.chunk.js.map": "/JuegoDeMemoria/static/js/2.74b5dbe7.chunk.js.map",
-    "index.html": "/JuegoDeMemoria/index.html",
-    "static/css/2.adb0b085.chunk.css.map": "/JuegoDeMemoria/static/css/2.adb0b085.chunk.css.map",
-    "static/css/main.bb6bbdc5.chunk.css.map": "/JuegoDeMemoria/static/css/main.bb6bbdc5.chunk.css.map",
-    "static/js/2.74b5dbe7.chunk.js.LICENSE.txt": "/JuegoDeMemoria/static/js/2.74b5dbe7.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.css": "/JuegoDeMemoria/static/media/fontawesome-webfont.f691f37e.woff"
+    "main.css": "/PokePareja/static/css/main.634b00dd.chunk.css",
+    "main.js": "/PokePareja/static/js/main.dcd3438b.chunk.js",
+    "main.js.map": "/PokePareja/static/js/main.dcd3438b.chunk.js.map",
+    "runtime-main.js": "/PokePareja/static/js/runtime-main.4aa3fb05.js",
+    "runtime-main.js.map": "/PokePareja/static/js/runtime-main.4aa3fb05.js.map",
+    "static/js/2.67a878c3.chunk.js": "/PokePareja/static/js/2.67a878c3.chunk.js",
+    "static/js/2.67a878c3.chunk.js.map": "/PokePareja/static/js/2.67a878c3.chunk.js.map",
+    "index.html": "/PokePareja/index.html",
+    "static/css/main.634b00dd.chunk.css.map": "/PokePareja/static/css/main.634b00dd.chunk.css.map",
+    "static/js/2.67a878c3.chunk.js.LICENSE.txt": "/PokePareja/static/js/2.67a878c3.chunk.js.LICENSE.txt",
+    "static/media/BOLAR.fa0366f4.png": "/PokePareja/static/media/BOLAR.fa0366f4.png",
+    "static/media/OHNO.e7b8a0e2.mp3": "/PokePareja/static/media/OHNO.e7b8a0e2.mp3",
+    "static/media/Carta.css": "/PokePareja/static/media/Pokéball02.95bdcfe6.png",
+    "static/media/coinsidencias.17cacc15.mp3": "/PokePareja/static/media/coinsidencias.17cacc15.mp3",
+    "static/media/App.css": "/PokePareja/static/media/fondo.562b1f8e.jpg",
+    "static/media/logo2.d73906a9.png": "/PokePareja/static/media/logo2.d73906a9.png",
+    "static/media/victoria.01cd1ba9.mp3": "/PokePareja/static/media/victoria.01cd1ba9.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.2a473e84.js",
-    "static/css/2.adb0b085.chunk.css",
-    "static/js/2.74b5dbe7.chunk.js",
-    "static/css/main.bb6bbdc5.chunk.css",
-    "static/js/main.82b34bfe.chunk.js"
+    "static/js/runtime-main.4aa3fb05.js",
+    "static/js/2.67a878c3.chunk.js",
+    "static/css/main.634b00dd.chunk.css",
+    "static/js/main.dcd3438b.chunk.js"
   ]
 }
