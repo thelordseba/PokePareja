@@ -4,11 +4,8 @@ import Header from './components/Header';
 import Tablero from './components/Tablero';
 import construirBaraja from './utils/construirBaraja';
 import UIfx from "uifx";
-import introPokemon from "./sounds/pokemon-intro.mp3";
-import introPokemon2 from "./sounds/POKEINTRO2.mp3";
 import yes from './sounds/coinsidencias.mp3';
 import victoria from './sounds/victoria.mp3';
-//import swal from 'sweetalert';
 import swal2 from 'sweetalert2';
 import bola2 from './images/BOLAR.png';
 import logo from './images/logo2.png'
@@ -96,51 +93,11 @@ class App extends Component{
 
     }, 1000);
 
-
-
-
-
-
-    
-    // setTimeout(()=>{
-    //   const [primeraCarta, segundaCarta] = pareja;                                         //Desctructring
-    //   let baraja = this.state.baraja;
-
-    //   if(primeraCarta.icono === segundaCarta.icono){
-
-    //     const yesSound = new UIfx(yes);
-    //     yesSound.play();
-
-    //     baraja = baraja.map((carta)=>{          
-    //       if(carta.icono !== primeraCarta.icono){
-    //         return carta;
-    //       }else{
-    //         return {...carta, fueAdivinada: true};
-    //       }
-    //     });
-    //   }
-
-    //   this.setState({
-    //     baraja: baraja,
-    //     parejaSeleccionada: [],
-    //     estaComparando: false,
-    //     numeroDeIntentos: this.state.numeroDeIntentos + 1        
-    //   });
-
-    //   this.verificarGanador(baraja);
-
-    // }, 1000);
   }
 
   verificarGanador(baraja){
     const cartasNoAdivinadas = baraja.filter((carta)=> !carta.fueAdivinada)
     if(cartasNoAdivinadas.length === 0){
-
-      // const introSound = new UIfx(introPokemon);
-      // introSound.play();
-
-      // const introSound2 = new UIfx(introPokemon2);
-      // introSound2.play();
 
       const victoriaSound = new UIfx(victoria);
       victoriaSound.play();
@@ -157,18 +114,7 @@ class App extends Component{
       })
       .then(()=>{
         this.resetearJuego();
-      });
-      
-      // swal({
-      //   title: "FELICITACIONES!!!!!",
-      //   text: `Ganaste la partida en ${this.state.numeroDeIntentos} intentos.`,
-      //   icon: "success",
-      //   button: "Aceptar",       
-      // })
-      // .then(()=>{        
-      //   this.resetearJuego();
-      // });
-      
+      });      
     }
   }
 
