@@ -1,6 +1,5 @@
 header{
-    height: 50px;
-    /* border: 1px solid black; */
+    height: 50px;  
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -9,8 +8,7 @@ header{
 
 .titulo{
     font-size: 30px;
-    padding: 10px;
-    /* color: rgb(229, 255, 0); */
+    padding: 10px;    
     color: rgb(255, 243, 1);
     font-weight: bold;
 }
@@ -32,3 +30,18 @@ header{
 .boton-reiniciar:hover {
     background-color: rgb(155, 25, 35);
 }    
+
+@media screen and (max-width: 414px){   
+    header{
+        height: 70px;                
+    }
+
+    .boton-reiniciar{
+        margin-top: 5px;
+    }
+
+    .titulo{
+        font-size: 25px;
+        padding: 10px;      
+    }
+}

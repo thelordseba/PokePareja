@@ -6,6 +6,7 @@ import construirBaraja from './utils/construirBaraja';
 import UIfx from "uifx";
 import yes from './sounds/coinsidencias.mp3';
 import victoria from './sounds/victoria.mp3';
+import ohno from './sounds/OHNO.mp3';
 import swal2 from 'sweetalert2';
 import bola2 from './images/BOLAR.png';
 import logo from './images/logo2.png'
@@ -64,10 +65,13 @@ class App extends Component{
     const [primeraCarta, segundaCarta] = pareja; 
 
     //Reproduce sonido de coinsidencia      
-    if(primeraCarta.icono === segundaCarta.icono){
-      const yesSound = new UIfx(yes);
-      yesSound.play();
-    } else{}                                     
+    // if(primeraCarta.icono === segundaCarta.icono){
+    //   const yesSound = new UIfx(yes);
+    //   yesSound.play(0.5);
+    // } else{
+    //   const wrong = new UIfx(ohno);
+    //   wrong.play(0.5);
+    // }                                     
 
     setTimeout(()=>{
       let baraja = this.state.baraja;

@@ -11,7 +11,7 @@
 .front{
     width: 125px;
     height: 125px;   
-    background-color: rgb(202, 32, 137);
+    background-color: #F5F5F5;
     border-radius: 50%;
     background-image: url("/src/images/Pokéball02.png");
     background-position: center center;
@@ -38,3 +38,52 @@
     width: 130px;
     height: 130px;   
 }
+
+@media screen and (max-width: 750px){   
+    .carta{
+        width: 55px;
+        height: 55px;       
+    }
+    
+    .front{
+        width: 55px;
+        height: 55px;   
+
+    }
+    
+    .back{
+        width: 55px;
+        height: 55px;    
+
+    }
+
+    .front:hover{
+        width: 55px;
+        height: 55px;   
+    }
+}
+
+@media screen and (max-width: 414px){   
+    .carta{
+        width: 65px;
+        height: 65px;       
+    }
+    
+    .front{
+        width: 65px;
+        height: 65px;   
+
+    }
+    
+    .back{
+        width: 65px;
+        height: 65px;    
+
+    }
+
+    .front:hover{
+        width: 65px;
+        height: 65px;   
+    }
+}
+

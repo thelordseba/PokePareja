@@ -18,5 +18,7 @@ export default ()=>{
     cartas.push({...carta});                                                       
     }
 
-    return shuffle(cartas);                                                            
+    let baraja = shuffle(cartas);
+
+    return shuffle(baraja);                                                            
 };
