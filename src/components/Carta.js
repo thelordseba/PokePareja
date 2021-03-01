@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Carta.css';
+import '../styles/Carta.css';
 import FlipCard from 'react-card-flip';
 
 export default class Carta extends Component{ 

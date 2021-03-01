@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
-import Header from './Header';
-import Tablero from './Tablero';
+import './styles/App.css';
+import Header from './components/Header';
+import Tablero from './components/Tablero';
 import construirBaraja from './utils/construirBaraja';
-import swal from 'sweetalert';
 import UIfx from "uifx";
-import introPokemon from "./utils/pokemon-intro.mp3";
-import Footer from './Footer';
+import introPokemon from "./sounds/pokemon-intro.mp3";
+import introPokemon2 from "./sounds/POKEINTRO2.mp3";
+import yes from './sounds/coinsidencias.mp3';
+import victoria from './sounds/victoria.mp3';
+//import swal from 'sweetalert';
+import swal2 from 'sweetalert2';
+import bola2 from './images/BOLAR.png';
+import logo from './images/logo2.png'
+import Footer from './components/Footer';
 
 
 const getEstadoInicial = ()=>{
@@ -57,11 +63,19 @@ class App extends Component{
 
   compararParejas(pareja){    
     this.setState({estaComparando: true});
+
+    const [primeraCarta, segundaCarta] = pareja; 
+
+    //Reproduce sonido de coinsidencia      
+    if(primeraCarta.icono === segundaCarta.icono){
+      const yesSound = new UIfx(yes);
+      yesSound.play();
+    } else{}                                     
+
     setTimeout(()=>{
-      const [primeraCarta, segundaCarta] = pareja;                                         //Desctructring
       let baraja = this.state.baraja;
 
-      if(primeraCarta.icono === segundaCarta.icono){
+      if(primeraCarta.icono === segundaCarta.icono){   
         baraja = baraja.map((carta)=>{          
           if(carta.icono !== primeraCarta.icono){
             return carta;
@@ -81,30 +95,85 @@ class App extends Component{
       this.verificarGanador(baraja);
 
     }, 1000);
+
+
+
+
+
+
+    
+    // setTimeout(()=>{
+    //   const [primeraCarta, segundaCarta] = pareja;                                         //Desctructring
+    //   let baraja = this.state.baraja;
+
+    //   if(primeraCarta.icono === segundaCarta.icono){
+
+    //     const yesSound = new UIfx(yes);
+    //     yesSound.play();
+
+    //     baraja = baraja.map((carta)=>{          
+    //       if(carta.icono !== primeraCarta.icono){
+    //         return carta;
+    //       }else{
+    //         return {...carta, fueAdivinada: true};
+    //       }
+    //     });
+    //   }
+
+    //   this.setState({
+    //     baraja: baraja,
+    //     parejaSeleccionada: [],
+    //     estaComparando: false,
+    //     numeroDeIntentos: this.state.numeroDeIntentos + 1        
+    //   });
+
+    //   this.verificarGanador(baraja);
+
+    // }, 1000);
   }
 
   verificarGanador(baraja){
     const cartasNoAdivinadas = baraja.filter((carta)=> !carta.fueAdivinada)
     if(cartasNoAdivinadas.length === 0){
 
-      const introSound = new UIfx(introPokemon);
-      introSound.play();
-      
-      swal({
-        title: "FELICITACIONES!!!!!",
-        text: `Ganaste la partida en ${this.state.numeroDeIntentos} intentos.`,
-        icon: "success",
-        button: "Aceptar",       
+      // const introSound = new UIfx(introPokemon);
+      // introSound.play();
+
+      // const introSound2 = new UIfx(introPokemon2);
+      // introSound2.play();
+
+      const victoriaSound = new UIfx(victoria);
+      victoriaSound.play();
+
+      swal2.fire({ 
+        title: `<font color="#FFFFFF" size="7">Ganaste el juego en ${this.state.numeroDeIntentos} intentos.</font>`,  
+        imageUrl: logo,
+        imageWidth: 400,
+        imageHeight: 146,
+        imageAlt: 'Custom image',
+        confirmButtonText: 'Reiniciar juego',
+        confirmButtonColor: '#EA0012',
+        background: ` url(${bola2})`
       })
-      .then(()=>{        
+      .then(()=>{
         this.resetearJuego();
       });
+      
+      // swal({
+      //   title: "FELICITACIONES!!!!!",
+      //   text: `Ganaste la partida en ${this.state.numeroDeIntentos} intentos.`,
+      //   icon: "success",
+      //   button: "Aceptar",       
+      // })
+      // .then(()=>{        
+      //   this.resetearJuego();
+      // });
       
     }
   }
 
-  resetearJuego(){
-    this.setState(getEstadoInicial()); 
+  resetearJuego(){    
+   this.setState(getEstadoInicial()); 
   };
   
 }

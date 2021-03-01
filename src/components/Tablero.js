@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Tablero.css';
+import '../styles/Tablero.css';
 import Carta from './Carta';
 
 export default class Tablero extends Component{

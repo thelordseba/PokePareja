@@ -28,3 +28,7 @@ header{
     /* border:0px; */
     border: 2px solid black;
 }
+
+.boton-reiniciar:hover {
+    background-color: rgb(155, 25, 35);
+}    

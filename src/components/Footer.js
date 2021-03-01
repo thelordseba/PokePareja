@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Footer.css';
-import gh from './utils/GH.png';
-import ld from './utils/LD.png';
+import '../styles/Footer.css';
+import gh from '../images/GH.png';
+import ld from '../images/LD.png';
 
 class Footer extends Component{
     render(){
