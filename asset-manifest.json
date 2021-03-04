@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PokePareja/static/css/main.634b00dd.chunk.css",
+    "main.css": "/PokePareja/static/css/main.e87c8124.chunk.css",
     "main.js": "/PokePareja/static/js/main.dcd3438b.chunk.js",
     "main.js.map": "/PokePareja/static/js/main.dcd3438b.chunk.js.map",
     "runtime-main.js": "/PokePareja/static/js/runtime-main.4aa3fb05.js",
@@ -8,11 +8,11 @@
     "static/js/2.67a878c3.chunk.js": "/PokePareja/static/js/2.67a878c3.chunk.js",
     "static/js/2.67a878c3.chunk.js.map": "/PokePareja/static/js/2.67a878c3.chunk.js.map",
     "index.html": "/PokePareja/index.html",
-    "static/css/main.634b00dd.chunk.css.map": "/PokePareja/static/css/main.634b00dd.chunk.css.map",
+    "static/css/main.e87c8124.chunk.css.map": "/PokePareja/static/css/main.e87c8124.chunk.css.map",
     "static/js/2.67a878c3.chunk.js.LICENSE.txt": "/PokePareja/static/js/2.67a878c3.chunk.js.LICENSE.txt",
     "static/media/BOLAR.fa0366f4.png": "/PokePareja/static/media/BOLAR.fa0366f4.png",
     "static/media/OHNO.e7b8a0e2.mp3": "/PokePareja/static/media/OHNO.e7b8a0e2.mp3",
-    "static/media/Carta.css": "/PokePareja/static/media/Pokéball02.95bdcfe6.png",
+    "static/media/Carta.css": "/PokePareja/static/media/PokéballReducida.26fe48a7.png",
     "static/media/coinsidencias.17cacc15.mp3": "/PokePareja/static/media/coinsidencias.17cacc15.mp3",
     "static/media/App.css": "/PokePareja/static/media/fondo.562b1f8e.jpg",
     "static/media/logo2.d73906a9.png": "/PokePareja/static/media/logo2.d73906a9.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.4aa3fb05.js",
     "static/js/2.67a878c3.chunk.js",
-    "static/css/main.634b00dd.chunk.css",
+    "static/css/main.e87c8124.chunk.css",
     "static/js/main.dcd3438b.chunk.js"
   ]
 }
