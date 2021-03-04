@@ -11,9 +11,9 @@
 .front{
     width: 125px;
     height: 125px;   
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
     border-radius: 50%;
-    background-image: url("/src/images/Pokéball02.png");
+    background-image: url("/src/images/PokéballReducida.png");
     background-position: center center;
     background-size: cover;
 }
